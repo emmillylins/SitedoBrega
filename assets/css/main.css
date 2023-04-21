@@ -120,16 +120,12 @@ a:hover {
 
   .navbar a,
   .navbar a:focus {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
     padding: 10px 0 10px 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 13px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
-    /* white-space: nowrap; */
     transition: 0.3s;
   }
 
@@ -163,7 +159,7 @@ a:hover {
   .navbar .dropdown ul li {
     min-width: 200px;
     padding: 10px 15px;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.918);
   }
 
   .navbar .dropdown ul a {
@@ -242,7 +238,7 @@ a:hover {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.918);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -259,7 +255,6 @@ a:hover {
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     letter-spacing: 1px;
-    /* white-space: nowrap; */
     transition: 0.3s;
     text-decoration: none;
   }
@@ -282,9 +277,9 @@ a:hover {
     position: static;
     display: none;
     padding: 10px 0;
-    margin: 10px 20px;
+    margin-left: 30px;
     transition: all 0.5s ease-in-out;
-    border: 1px solid black;
+    background-color: transparent;
   }
 
   .navbar .dropdown>.dropdown-active {
@@ -317,6 +312,12 @@ a:hover {
   }
 }
 
+@media (max-width: 500px){
+  .mobile-nav-show {
+    margin: 10.5px 10px 10px 10px !important;
+  }
+
+}
 /*--------------------------------------------------------------
 # Scroll top button
 --------------------------------------------------------------*/
@@ -607,4 +608,9 @@ a:hover {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+.col-lg-4, .col-md6 {
+  height: fit-content;
 }
