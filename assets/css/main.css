@@ -508,9 +508,11 @@ a:hover {
 # CONTATO
 --------------------------------------------------------------*/
 
-.contact .form {
-  display: flex;
-  justify-content: center;
+@media (min-width: 1200px) {
+  .contact .row {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contact h2 {
