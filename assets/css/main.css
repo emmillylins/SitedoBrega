@@ -508,6 +508,11 @@ a:hover {
 # CONTATO
 --------------------------------------------------------------*/
 
+.contact .form {
+  display: flex;
+  justify-content: center;
+}
+
 .contact h2 {
   text-align: center;
   color: #ffffffd2;
@@ -517,15 +522,15 @@ a:hover {
   letter-spacing: 0.5px;
 }
 
-.contact .php-email-form {
+.contact .email-form {
   width: 100%;
 }
 
-.contact .php-email-form .form-group {
+.contact .email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .error-message {
+.contact .email-form .error-message {
   display: none;
   color: #fff;
   background: #df1529;
@@ -534,11 +539,11 @@ a:hover {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .email-form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .email-form .sent-message {
   display: none;
   color: #fff;
   background: #688d38;
@@ -547,7 +552,7 @@ a:hover {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .email-form .loading {
   display: none;
   background: #161718;;
   text-align: center;
@@ -555,7 +560,7 @@ a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contact .php-email-form .loading:before {
+.contact .email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -567,8 +572,8 @@ a:hover {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .email-form input,
+.contact .email-form textarea {
   border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
@@ -577,15 +582,15 @@ a:hover {
   color: #fff;
 }
 
-.contact .php-email-form input {
+.contact .email-form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .email-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .email-form button[type=submit] {
   font-weight: bold;
   letter-spacing: 1px;
   background: #688d38;
@@ -596,7 +601,7 @@ a:hover {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .email-form button[type=submit]:hover {
   background: #688d38b9;
 }
 
