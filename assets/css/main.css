@@ -346,7 +346,7 @@ a:hover {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 15px;
+  bottom: 50px;
 }
 
 /*--------------------------------------------------------------
