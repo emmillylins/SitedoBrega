@@ -380,18 +380,18 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-# about Section
+# banner Section
 --------------------------------------------------------------*/
-.about {
+.banner {
   padding: 1rem 0 12rem 0;
   
 }
 
-.about .text {
+.banner .text {
   text-align: center;
 }
 
-.about h2 {
+.banner h2 {
   padding: 0 25%;
   font-size: 35px;
   font-weight: 600;
@@ -399,17 +399,17 @@ a:hover {
   font-family: 'Cardo', sans-serif
 }
 
-.about h2 span {
+.banner h2 span {
   position: relative;
   z-index: 1;
   padding: 0 5px;
   display: inline-block;
 }
 
-.about h2 span:before {
+.banner h2 span:before {
   content: "";
   position: absolute;
-  height: 50%;
+  height: 40%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -417,14 +417,14 @@ a:hover {
   z-index: -1;
 }
 
-.about p {
+.banner p {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 30px;
   font-size: 18px;
   padding: 0 23%;
 }
 
-.about .btn-get-started {
+.banner .btn-get-started {
   font-weight: bold;
   font-size: 14px;
   display: inline-block;
@@ -437,44 +437,43 @@ a:hover {
   background: #688d38;
 }
 
-.about .btn-get-started:hover {
+.banner .btn-get-started:hover {
   background: #688d38b9;
 }
 
 @media (max-width: 1100px) {
-  .about h2 {
+  .banner h2 {
     padding: 0 23% !important;
   }
 
-  .about p {
+  .banner p {
     font-size: 15px;
     padding: 0 20%;
   }
 }
 
 @media (max-width: 1000px) {
-  .about h2 {
+  .banner h2 {
     padding: 0 19% !important;
   }
 
-  .about p {
+  .banner p {
     font-size: 15px;
     padding: 0 10%;
   }
 }
 
 @media (max-width: 662px) {
-  .about h2 {
+  .banner h2 {
     font-size: 32px;
     padding: 0 3% !important;
   }
 
-  .about p {
+  .banner p {
     font-size: 15px;
     padding: 0;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Footer
@@ -621,3 +620,234 @@ a:hover {
 .col-lg-4, .col-md6 {
   height: fit-content;
 }
+
+/*--------------------------------------------------------------
+# categorias
+--------------------------------------------------------------*/
+
+#categorias {
+  background-color: #000;
+}
+
+#categorias > *:first-child {
+  border-top: 0;
+}
+
+#categorias > * > .inner {
+  padding: 4em 0 2em 0 ;
+  margin: 0 auto;
+  max-width: 65em;
+  width: calc(100% - 6em);
+}
+
+@media screen and (max-width: 736px) {
+
+  #categorias > * > .inner {
+    padding: 3em 0 1em 0 ;
+    width: calc(100% - 3em);
+  }
+
+}
+
+#categorias.alt {
+  background-color: transparent;
+  border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+}
+
+
+/*--------------------------------------------------------------
+# Tiles
+--------------------------------------------------------------*/
+.tiles {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-top: 0 !important;
+}
+
+.tiles + * {
+  border-top: 0 !important;
+}
+
+.tiles article {
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
+  -webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
+  -ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
+  transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
+  padding: 4em 4em 2em 4em ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: default;
+  height: 40vh;
+  max-height: 40em;
+  min-height: 23em;
+  overflow: hidden;
+  position: relative;
+  width: 40%;
+}
+
+  .tiles article .image {
+    display: none;
+  }
+
+  .tiles article header {
+    position: relative;
+    z-index: 3;
+  }
+
+
+  .tiles article .h3custom {
+    font-size: 1.75em;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    line-height: 1.65;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+  }
+
+  .tiles article p, .tiles article a {
+    color: #ffffffc4;
+  }
+    
+    .tiles article .h3custom a:hover {
+      color: inherit !important;
+    }
+
+
+  .tiles article:before {
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .tiles article:after {
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .tiles article:hover:before {
+    opacity: 100%;
+  }
+
+  .tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
+    width: 60%;
+  }
+
+  .tiles article:nth-child(6n - 5):before {    
+    background: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.5)),
+    url("../img/priscila-senna.jpeg") no-repeat;
+    background-size: cover;
+  }
+
+  .tiles article:nth-child(6n - 4):before {
+    background: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.5)),
+    url("../img/shevelloco.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .tiles article:nth-child(6n - 3):before {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.705)),
+    url("../img/reginaldo-rossi.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .tiles article:nth-child(6n - 2):before {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.705)),
+    url("../img/biel-xcamoso.jpg") no-repeat;
+    background-size: cover;
+  }
+  
+/* 
+  .tiles article:nth-child(6n - 1):before {
+    background-color: #ffffff;
+  }
+
+  .tiles article:nth-child(6n):before {
+    background-color: #ffffff;
+  } */
+
+@media screen and (max-width: 1280px) {
+  .tiles article {
+    padding: 4em 3em 2em 3em ;
+    height: 30vh;
+    max-height: 30em;
+    min-height: 20em;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .tiles article {
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .tiles article {
+    padding: 3em 1.5em 1em 1.5em ;
+    height: 16em;
+    max-height: none;
+    min-height: 0;
+  }
+    .tiles article h3 {
+      font-size: 1.5em;
+    }
+    .tiles article .h3custom {
+      font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+  .tiles {
+    display: block;
+  }
+
+    .tiles article {
+      height: 20em;
+      width: 100% !important;
+    }
+
+}
+
+.about h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #688d38;
+}
+
+/*--------------------------------------------------------------
+# IMG BregaFunk
+--------------------------------------------------------------*/
+
+
