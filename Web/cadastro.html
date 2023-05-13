@@ -1,0 +1,123 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="theme-color">
+
+  <title>Brega Massa</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json"/>
+  <script>navigator.serviceWorker.register("service-worker.js")</script> 
+
+  <!-- SCRIPT -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/service.js" defer></script>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header">
+      <div class="logo">
+        <a href="index.html"><h1>BregaMassa</h1></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#"><span>Categorias</span></a>
+            <ul>
+              <li><a href="#">Românticas</a></li>
+              <li><a href="bregafunk.html">BregaFunk</a></li>
+              <li><a href="#">DasAntigas</a></li>
+              <li><a href="#">Favoritas</a></li>
+            </ul>
+          </li>  
+          <li><a href="cadastro.html" class="active">Cadastro</a></li>        
+          <li><a href="contact.html">Fale conosco</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <div class="social-icons">
+        <a href="#" alt="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.instagram.com/htemyl/" alt="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/emmilly-lins-82b06a235/" alt="linkedin" ><i class="bi bi-linkedin"></i></i></a>
+      </div>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+
+  </header><!-- End Header -->
+
+  <main class="cadastro">
+    <div class="container">
+      <h2>Cadastro de Usuários</h2>
+
+      <div class="row justify-content-center mt-4">
+      <div class="col-lg-9">
+        <form class="form-dados">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="login" class="form-control" id="login" placeholder="User" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="password" class="form-control" name="password" id="password" placeholder="Senha" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Mensagem enviada!</div>
+          </div>
+          <div class="text-center"><button type="submit">Cadastrar</button></div>
+        </form>
+      </div><!-- End USER Form -->
+    </div>
+  </div>
+
+      <table id="tabela">
+        <thead>
+          <tr>
+            <th>Login</th>
+            <th>Senha</th>
+            <th>E-mail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dados cadastrados serão exibidos aqui -->
+        </tbody>
+      </table>
+      
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>BregaMassa</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://github.com/emmillylins">htemyl</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+</body>
+</html>
